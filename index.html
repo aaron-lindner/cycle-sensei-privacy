@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Cycle Sensei</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --charcoal: #0F0F1A;
+      --indigo: #1a1a3e;
+      --gold: #C9A84C;
+      --gold-light: #e8c96d;
+      --white: #f0ede6;
+      --muted: #9090a0;
+    }
+
+    body {
+      background-color: var(--charcoal);
+      color: var(--white);
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 18px;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 24px 40px;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: var(--gold);
+      margin: 24px auto 0;
+    }
+
+    .app-name {
+      font-family: 'Cinzel', serif;
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: 0.05em;
+    }
+
+    .updated {
+      margin-top: 12px;
+      font-size: 14px;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .intro {
+      background: rgba(201, 168, 76, 0.06);
+      border-left: 3px solid var(--gold);
+      padding: 20px 24px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 48px;
+      font-style: italic;
+      color: var(--white);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 14px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+    }
+
+    p {
+      color: #c8c5be;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      color: #c8c5be;
+      padding: 6px 0 6px 24px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '▸';
+      color: var(--gold);
+      position: absolute;
+      left: 0;
+      font-size: 12px;
+      top: 8px;
+    }
+
+    .contact-link {
+      color: var(--gold-light);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+      transition: border-color 0.2s;
+    }
+
+    .contact-link:hover {
+      border-color: var(--gold);
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid rgba(201, 168, 76, 0.1);
+      color: var(--muted);
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    footer span {
+      color: var(--gold);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <p class="app-name">Cycle Sensei</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: March 2026</p>
+  </header>
+
+  <main>
+
+    <div class="intro">
+      Cycle Sensei is designed with your privacy in mind. All data is stored locally on your device and never transmitted to external servers.
+    </div>
+
+    <section>
+      <h2>Data We Collect</h2>
+      <ul>
+        <li>Partner's name (stored locally on your device only)</li>
+        <li>Cycle start date and average cycle length (stored locally on your device only)</li>
+        <li>Daily mission streak (stored locally on your device only)</li>
+        <li>Notification preferences (stored locally on your device only)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How We Use Your Data</h2>
+      <p>All information entered into Cycle Sensei is used solely to calculate cycle phases and deliver daily advice. This data never leaves your device and is never shared with third parties.</p>
+    </section>
+
+    <section>
+      <h2>Data Storage</h2>
+      <p>All data is stored using AsyncStorage on your device. Uninstalling the app will permanently delete all stored data. We do not maintain any servers or databases containing your personal information.</p>
+    </section>
+
+    <section>
+      <h2>Third Party Services</h2>
+      <p>Cycle Sensei uses Expo's push notification service to deliver daily reminders. No personal data is shared with this service. We do not use analytics, advertising networks, or any other third party data collection tools.</p>
+    </section>
+
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>Cycle Sensei is intended for users aged 18 and over. We do not knowingly collect information from anyone under the age of 18.</p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date. Continued use of the app constitutes acceptance of any changes.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>For any privacy questions or concerns, please contact us at:<br/>
+        <a href="mailto:aaron@aaronlindner.com" class="contact-link">aaron@aaronlindner.com</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 <span>Cycle Sensei</span>. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
